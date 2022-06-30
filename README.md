@@ -22,4 +22,20 @@ The notebooks in this repo contain the code used for data acquisiton, EDA, local
  
 9.3. (Python) Code to perform LightGBM local modeling with no hyperparameter tuning and with Bayesian optimization.
 
+10. (Python) Code to construct and test DeepAR models using the GluonTS implementation.
+
+11. (Python) Code for initial processing of data from unseen sensors.
+
+12. (R) Code to impute the data from the unseen sensors.
+
+13. (R) Code to assign the data from the unseen sensors to the appropriate clusters for each clustering technique used.
+
+14. (R) Code to forecast data from the unseen sensors using Pooled Regression.
+
+15. (Python) Code to forecast data from the unseen sensors for the default LightGBM models.
+
+16. (Python) Code to forecast data from the unseen sensors for the LightGBM models trained with Bayesian Optimization.
+
+17. (Python) Code to forecasts data from the unseen sensors using DeepAR.
+
 99. (R) Extra code for plots/follow up analyses
