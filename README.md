@@ -46,7 +46,7 @@ The notebooks in this repo contain the code used for data acquisiton, EDA, local
 If you are using EC2, the following instructions should enable you to set up the necessary conda environments and run the code from this repo. If you are using Linux (but not EC2), these instructions should generally apply as well. Use of conda is not required for running the code from this repo, but following these instructions ensures that your environment is similar to what my environment was like when I developed this code. If you have a prefered way of managing python packages or running R-based jupyter notebooks, that should work as well. 
 
 ## Installing Conda
-On a fresh (Ubuntu) EC2 instance, download the Miniconda installer shell script with the following command:
+On a fresh (AL2) EC2 instance, download the Miniconda installer shell script with the following command:
 ```wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.12.0-Linux-x86_64.sh```
 
 Use the following command to run the installer:
@@ -55,7 +55,7 @@ Use the following command to run the installer:
 * Type yes whenever prompted
 
 Next, update the path so that you can use Miniconda
-```export path export PATH="/home/ubuntu/miniconda3/bin:$PATH"```
+```export path export PATH="/home/ec2-user/miniconda3/bin:$PATH"```
 
 * Run ```conda list``` to check that conda is working
 
