@@ -102,7 +102,7 @@ Create a second conda environment for R-based notebooks by running:
 Activate the environment:
 ```conda activate thesis_env_r```
 
-Install R and the R-essentials package from conda:
+Install R and the R-essentials package from conda. I use R version 4.1.3:
 * ```conda install -c conda-forge r-base=4.1.3```
 * ```conda install -c conda-forge r-essentials```
 
@@ -110,7 +110,22 @@ Now run R (just type `R` in your terminal)
 
 Install the required packages from CRAN, using the `install.packages` function and your preferred mirror (I used USA: OH, number 74)
     ```install.packages(c("tidyverse","timetk","ggridges","cluster","forecast","Metrics","Rcatch22","tseries","factoextra","tsfeatures","dtwclust","biglm","scoringutils"))```
-    
+
+The R package versions used in this repo are as follows:
+* tidyverse = 1.3.1
+* timetk = 2.8.1
+* ggridges = 0.5.3
+* cluster = 2.1.3
+* forecast = 8.16
+* Metrics = 0.1.4
+* Rcatch22 = 0.2.1
+* tseries = 0.10-51
+* factoextra = 1.0.7
+* tsfeatures = 1.0.2
+* dtwclust = 5.5.10
+* biglm = 0.9-2.1
+* scoringutils = 1.0.0
+
 You may run into some issues with these installs which require debugging. In my case, `factoextra` did not install the first time around. This was because cmake was not installed. I was able to install cmake by exiting R (running `quit()`) and running `conda install -c anaconda cmake`
 
 I then started R again (by typing `R`) and re-ran `install.packages("factoextra")`, which worked this time.
