@@ -131,6 +131,10 @@ I then started R again (by typing `R`) and re-ran `install.packages("factoextra"
 
 Next, exit R (`quit()`) and deactivate the conda environment by running `conda deactivate` 
 
+Note: if jupyter does not work in this env by default, you may also need to install ipython and notebook with simple conda install commands
+* `conda install ipython`
+* `conda install notebook`
+
 ### Cloning the Github Repo
 You are now ready to clone the github repo. I am assuming you have git installed. If you do not, this can typically be installed by running `sudo apt install git` or by following instructions such as https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-20-04 or https://git-scm.com/book/en/v2/Getting-Started-Installing-Git. Once git is installed, clone the git repo from https://github.com/lojzimjm/dissertation.
 For example, run ```git clone https://github.com/lojzimjm/dissertation.git```
