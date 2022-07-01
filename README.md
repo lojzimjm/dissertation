@@ -62,12 +62,11 @@ Next, update the path so that you can use Miniconda
 ### Creating a Conda Env for Python    
 We will now create a conda environment for running any Python notebooks (R notebooks should be run in a separate conda environment because conda and R do not play as nicely together as Python and conda, see below for instructions)
 
-Run the following command to create a conda env with python version 3.8.12
-```conda create -n thesis_env python=3.8.12 ipython notebook```
+Run the following command to create a conda env with Python version 3.8.12
+* ```conda create -n thesis_env python=3.8.12 ipython notebook```
 
 Run the following command to activate the environment
-```conda activate thesis_env```
-
+* ```conda activate thesis_env```
 * If this does not work, you may need to restart the machine
     
 You can now conda/pip install the libraries required for these notebooks
