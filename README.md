@@ -52,12 +52,12 @@ On a fresh (Ubuntu) EC2 instance, download the Miniconda installer shell script 
 Use the following command to run the installer:
 ```sh Miniconda3-py38_4.12.0-Linux-x86_64.sh```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Type yes whenever prompted
+* Type yes whenever prompted
 
 Next, update the path so that you can use Miniconda
 ```export path export PATH="/home/ubuntu/miniconda3/bin:$PATH"```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Run ```conda list``` to check that conda is working
+* Run ```conda list``` to check that conda is working
 
 ### Creating a Conda Env for Python    
 We will now create a conda environment for running any Python notebooks (R notebooks should be run in a separate conda environment because conda and R do not play as nicely together as Python and conda, see below for instructions)
@@ -68,11 +68,11 @@ Run the following command to create a conda env with python version 3.8.12
 Run the following command to activate the environment
 ```conda activate thesis_env```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- If this does not work, you may need to restart the machine
+* If this does not work, you may need to restart the machine
     
 You can now conda/pip install the libraries required for these notebooks
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- You may also try to create the conda environment using the conda_env_python_req.txt file directly, but not all libraries are currently available from conda so it will likely fail
+* You may also try to create the conda environment using the conda_env_python_req.txt file directly, but not all libraries are currently available from conda so it will likely fail
     
 I ran these commands one-by-one to install all necessary libraries (I'm sure there is a fast way):
 * ```conda install numpy=1.20.3```
@@ -151,4 +151,4 @@ Once data has been imputed and saved in the Data/Processed directory, the more i
 * Run notebook 9.3 to build local LightGBM models
 * Run notebook 10 to build global DeepAR models
 * Notebooks 11-17 are used for the data from unseen sensors
-** The raw data for these sensors is provided with the repo
+    * The raw data for these sensors is provided with the repo
