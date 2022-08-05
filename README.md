@@ -39,6 +39,10 @@ The notebooks in this repo contain the code used for data acquisiton, EDA, local
 
 17. (Python) Code to forecasts data from the unseen sensors using DeepAR.
 
+18. (R) Local baseline and ARIMA models for the unseen sensor data
+
+19. (Python) Local LightGBM models for the unseen sensor data
+
 99. (R) Extra code for plots/follow up analyses
 
 
