@@ -75,9 +75,7 @@ Run the following command to activate the environment
     
 You can now conda/pip install the libraries required for these notebooks
 
-* You may also try to create the conda environment using the conda_env_python_req.txt file directly, but not all libraries are currently available from conda so it will likely fail
-    
-I ran these commands one-by-one to install all necessary libraries (I'm sure there is a fast way):
+I ran these commands one-by-one to install all necessary libraries (I'm sure there is a faster way):
 * ```conda install numpy=1.20.3```
 * ```conda install pandas=1.3.4```
 * ```conda install matplotlib=3.5.0```
