@@ -109,7 +109,7 @@ Install R and the R-essentials package from conda. I use R version 4.1.3:
 
 Now run R (just type `R` in your terminal)
 
-Install the required packages from CRAN, using the `install.packages` function and your preferred mirror (I used USA: OH, number 74)
+Install the required packages from CRAN, using the `install.packages` function and your preferred mirror (I used USA: OH, number 76)
     ```install.packages(c("tidyverse","timetk","ggridges","cluster","forecast","Metrics","Rcatch22","tseries","factoextra","tsfeatures","dtwclust","biglm","scoringutils"))```
 
 The R package versions used in this repo are as follows:
