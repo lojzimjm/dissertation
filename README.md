@@ -153,7 +153,7 @@ To open the notebooks, activate the relevant conda environment (e.g., `conda act
 
 **If you are planning on running the code in Notebooks 1,2, or 3, please read the following**
 
-The following steps are optional since all the required data provided with the github repo. However, if you would like to start from scratch, I have a few thoughts. 
+The following steps are optional since the required samples of data needed to run the models are provided with the github repo. However, if you would like to start from scratch, I have a few thoughts. 
 1. If you are planning to start from notebook 1, please note that this notebook takes a substantial amount of time (many hours) to run. The Portland-Vancouver API is a bit finnicky and the data returned may not match identically with the data provided with the repo. As such, I _do not_ recommend starting from this notebook
 2. I would recommend beginning here. If you are planning to begin from notebook 2, data in the Data/Intermediate directory will be overwritten. This should not be a problem. 
 3. In reality, none of the interesting stuff happens until notebook 3. In this notebook, missing data is actually imputed. However, this notebook can also be skipped as the data which has been imputed is already included with the repo. 
