@@ -138,7 +138,7 @@ Note: if jupyter does not work in this env by default, you may also need to inst
 * `conda install notebook`
 
 ### Cloning the Github Repo
-You are now ready to clone the github repo. I am assuming you have git installed. If you do not, this can typically be installed by running `sudo apt install git` or by following instructions such as https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-20-04 or https://git-scm.com/book/en/v2/Getting-Started-Installing-Git. Once git is installed, clone the git repo from https://github.com/lojzimjm/dissertation.
+You are now ready to clone the github repo. I am assuming you have git installed. If you do not, this can typically be installed by running `sudo yum install git -y` or by following instructions such as https://cloudaffaire.com/how-to-install-git-in-aws-ec2-instance/ or https://git-scm.com/book/en/v2/Getting-Started-Installing-Git. Once git is installed, clone the git repo from https://github.com/lojzimjm/dissertation.
 For example, run ```git clone https://github.com/lojzimjm/dissertation.git```
 
 To open the notebooks, activate the relevant conda environment (e.g., `conda activate thesis_env`) and follow these instructions to connect to jupyter on ec2: https://towardsdatascience.com/setting-up-and-using-jupyter-notebooks-on-aws-61a9648db6c5
