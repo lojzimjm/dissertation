@@ -145,7 +145,8 @@ To open the notebooks, activate the relevant conda environment (e.g., `conda act
 
 ### Running the Code
 
-#### A word of caution about using the repo in general
+#### Some words of caution about using the repo in general
+* The code in this repo is meant to be run in order. While notebooks can be run out of order, there may be dependcies on earlier notebooks which cause problems. For example, all notebooks which perform global modeling depend on the clustering results of notebook 7, so notebook 7 must be run before performing any global modeling.
 * After completing the use of one notebook, it is advisable to shut it down before moving onto the next notebook. Because there is a large amount of data and many of the models used in this repo are fairly complex, it is easy to eat up a lot of RAM without thinking about it. By shutting down each notebook before moving to the next one, this problem can be largely avoided. 
 * Please note: this code was originially run on a machine with _64 GB_ RAM. I do not know how it will perform with less than this.
 
@@ -154,7 +155,7 @@ To open the notebooks, activate the relevant conda environment (e.g., `conda act
 **If you are planning on running the code in Notebooks 1,2, or 3, please read the following**
 
 The following steps are optional since the required samples of data needed to run the models are provided with the github repo. However, if you would like to start from scratch, I have a few thoughts. 
-1. If you are planning to start from notebook 1, please note that this notebook takes a substantial amount of time (many hours) to run. The Portland-Vancouver API is a bit finnicky and the data returned may not match identically with the data provided with the repo. As such, I _do not_ recommend starting from this notebook
+1. If you are planning to start from notebook 1, please note that this notebook takes a substantial amount of time (many hours) to run. The Portland-Vancouver API is finnicky, does not always respond, and the data returned may not match identically with the data provided with the repo. As such, I _do not_ recommend starting from this notebook
 2. I would recommend beginning here. If you are planning to begin from notebook 2, data in the Data/Intermediate directory will be overwritten. This should not be a problem. 
 3. In reality, none of the interesting stuff happens until notebook 3. In this notebook, missing data is actually imputed. However, this notebook can also be skipped as the data which has been imputed is already included with the repo. 
 
@@ -170,5 +171,5 @@ Once data has been imputed and saved in the Data/Processed directory, the more i
 * Run notebook 9.1 and 9.2 to build globla LightGBM models
 * Run notebook 9.3 to build local LightGBM models
 * Run notebook 10 to build global DeepAR models
-* Notebooks 11-17 are used for the data from unseen sensors
+* Notebooks 11-19 are used for the data from unseen sensors
     * The raw data for these sensors is provided with the repo
