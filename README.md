@@ -43,7 +43,7 @@ The notebooks in this repo contain the code used for data acquisiton, EDA, local
 
 19. (Python) Local LightGBM models for the unseen sensor data
 
-99. (R) Extra code for plots/follow up analyses
+99\. (R) Extra code for plots/follow up analyses
 
 
 # Installation and Usage Guide
@@ -173,4 +173,4 @@ Once data has been imputed and saved in the Data/Processed directory, the more i
 * Run notebook 10 to build global DeepAR models
 * Notebooks 11-19 are used for the data from unseen sensors
     * The raw data for these sensors is provided with the repo
-* Notebook 20 is used for some additional plots and EDA on the unseen sensor data
+* Notebook 99 is used for some additional plots and EDA on the unseen sensor data
