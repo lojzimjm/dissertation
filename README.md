@@ -146,7 +146,7 @@ To open the notebooks, activate the relevant conda environment (e.g., `conda act
 ### Running the Code
 
 #### Some words of caution about using the repo in general
-* The code in this repo is meant to be run in order. While notebooks can be run out of order, there may be dependcies on earlier notebooks which cause problems. For example, all notebooks which perform global modeling depend on the clustering results of notebook 7, so notebook 7 must be run before performing any global modeling.
+* The code in this repo is meant to be run in order. While notebooks can be run out of order, there may be dependcies on earlier notebooks which cause problems. For example, all notebooks which perform global modeling depend on the clustering results of notebook 7, so notebook 7 must be run before performing any global modeling. Any notebook which performs forecasting with global models on unseen data requires the original modeling results, so notebook 16 relies on the results of notebook 9.2, for example. 
 * After completing the use of one notebook, it is advisable to shut it down before moving onto the next notebook. Because there is a large amount of data and many of the models used in this repo are fairly complex, it is easy to eat up a lot of RAM without thinking about it. By shutting down each notebook before moving to the next one, this problem can be largely avoided. 
 * Please note: this code was originially run on a machine with _64 GB_ RAM. I do not know how it will perform with less than this.
 
@@ -156,8 +156,8 @@ To open the notebooks, activate the relevant conda environment (e.g., `conda act
 
 The following steps are optional since the required samples of data needed to run the models are provided with the github repo. However, if you would like to start from scratch, I have a few thoughts. 
 1. If you are planning to start from notebook 1, please note that this notebook takes a substantial amount of time (many hours) to run. The Portland-Vancouver API is finnicky, does not always respond, and the data returned may not match identically with the data provided with the repo. As such, I _do not_ recommend starting from this notebook
-2. If you are planning to begin from notebook 2, data in the Data/Intermediate directory will be overwritten. This should not be a problem, except that the raw data included with the repo is a sample of the full raw data utilized in my dissertation, and as such, overwriting the intermediate data with the sample raw data may change some of the results in subseqeunt notebooks. 
-3. Of notebooks 1, 2, and 3, I would recommend beginning here. In reality, none of the interesting stuff happens until notebook 3. In this notebook, missing data is actually imputed. However, this notebook can also be skipped as the data which has been imputed is already included with the repo. 
+2. If you are planning to begin from notebook 2, data in the Data/Intermediate directory will be overwritten. This should not be a problem for running the following notebooks, but the raw data included with the repo is a sample of the full raw data utilized in my dissertation, and as such, overwriting the intermediate data may change some of the results in subseqeunt notebooks. The only real work that happens in notebook 2 is that all data is formatted into similar CSV files and linear interpolation is used for imputation. However, the linear interpolation was found to be inadequate and as such, the imputation results in notebook 2 are never used again.  
+3. Of notebooks 1, 2, and 3, I would recommend beginning here. In this notebook, we actually impute missing data using a modified temporal medians method. However, this notebook can also be skipped if desired as the data which has been imputed is already included with the repo. 
 
 #### Running Notebooks 4 and On
 
