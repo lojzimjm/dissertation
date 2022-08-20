@@ -168,7 +168,7 @@ Once data has been imputed and saved in the Data/Processed directory, the more i
 * Run notebook 6 to perform the Prophet based local modeling
 * Run notebook 7 to perform clustering
 * Run notebook 8 to perform pooled regression (first global models)
-* Run notebook 9.1 and 9.2 to build globla LightGBM models
+* Run notebooks 9.1 and 9.2 to build global LightGBM models
 * Run notebook 9.3 to build local LightGBM models
 * Run notebook 10 to build global DeepAR models
 * Notebooks 11-19 are used for the data from unseen sensors
