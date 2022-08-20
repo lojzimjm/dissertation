@@ -11,7 +11,7 @@ The notebooks in this repo contain the code used for data acquisiton, EDA, local
 
 5. (R) Code to perform baseline local modeling. These include ARIMA and naive forecasting models.
 
-6. (Python) Code to perform FBProphet based modeling.
+6. (Python) Code to perform FBProphet based modeling. Note that based on https://github.com/facebook/prophet/issues/1866, Prophet models run on different machines may produce slightly different results.
 
 7. (R) Code to perform time series clustering.
 
