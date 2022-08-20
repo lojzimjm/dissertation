@@ -37,13 +37,13 @@ The notebooks in this repo contain the code used for data acquisiton, EDA, local
 
 16. (Python) Code to forecast data from the unseen sensors for the LightGBM models trained with Bayesian Optimization.
 
-17. (Python) Code to forecasts data from the unseen sensors using DeepAR.
+17. (Python) Code to forecast data from the unseen sensors using DeepAR.
 
-18. (R) Local baseline and ARIMA models for the unseen sensor data
+18. (R) Code to fit and measure the performance of local baseline and ARIMA models for the unseen sensor data.
 
-19. (Python) Local LightGBM models for the unseen sensor data
+19. (Python) Code to fit and measure the performance of local LightGBM models for the unseen sensor data.
 
-99\. (R) Extra code for plots/follow up analyses
+99\. (R) Extra code for plots and follow up analyses.
 
 
 # Installation and Usage Guide
@@ -64,7 +64,7 @@ Next, update the path so that you can use Miniconda
 * Run ```conda list``` to check that conda is working
 
 ### Creating a Conda Env for Python    
-We will now create a conda environment for running any Python notebooks (R notebooks should be run in a separate conda environment because conda and R do not play as nicely together as Python and conda, see below for instructions)
+We will now create a conda environment for running any Python notebooks (R notebooks should be run in a separate conda environment because conda and R do not play as nicely together as Python and conda; see below for instructions)
 
 Run the following command to create a conda env with Python version 3.8.12
 * ```conda create -n thesis_env python=3.8.12 ipython notebook```
