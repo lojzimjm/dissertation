@@ -19,7 +19,7 @@ The notebooks in this repo contain the code used for data acquisiton, EDA, local
 
 9.1. (Python) Code to perform LightGBM global modeling with no hyperparameter tuning. 
 
-9.2. (Python) Code to perform LightGBM global modeling with Bayesian hyperparameter tuning. 
+9.2. (Python) Code to perform LightGBM global modeling with Bayesian hyperparameter tuning. Note that based on https://github.com/fmfn/BayesianOptimization/issues/155, running Bayesian optimization on different machines, even with the same set up otherwise, is likely to yield somewhat different results.
  
 9.3. (Python) Code to perform LightGBM local modeling with no hyperparameter tuning and with Bayesian optimization.
 
