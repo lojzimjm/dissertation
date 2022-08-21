@@ -5,13 +5,13 @@ The notebooks in this repo contain the code used for data acquisiton, EDA, local
 
 2. (Python) Code to read in raw data, perform simple linear interpolation for missing values, and output the data in a standardized format. Outputs from this notebook go to the Data/Intermediate directory.
 
-3. (R) Code to explore missing data and perform imputation using the modified temporal medians technique. Outputs from this notebook is written to the Data/Processed directory. These files are the ones we work with for the rest of the analysis/modeling. 
+3. (R) Code to explore missing data and perform imputation using the modified temporal medians technique. Outputs from this notebook is written to the Data/Processed directory. These files are the ones we work with for the rest of the analysis and modeling. 
 
 4. (R) Code to perform exploratory analysis.
 
 5. (R) Code to perform baseline local modeling. These include ARIMA and naive forecasting models.
 
-6. (Python) Code to perform FBProphet based modeling. Note that based on https://github.com/facebook/prophet/issues/1866, Prophet models which are fit on different machines may produce slightly different results, even if everything else about the environment remains the same.
+6. (Python) Code to perform FBProphet modeling. Note that based on https://github.com/facebook/prophet/issues/1866, Prophet models which are fit on different machines may produce slightly different results, even if everything else about the environment remains the same.
 
 7. (R) Code to perform time series clustering.
 
@@ -33,9 +33,9 @@ The notebooks in this repo contain the code used for data acquisiton, EDA, local
 
 14. (R) Code to forecast data from the unseen sensors using Pooled Regression.
 
-15. (Python) Code to forecast data from the unseen sensors for the default LightGBM models.
+15. (Python) Code to forecast data from the unseen sensors using the default LightGBM models.
 
-16. (Python) Code to forecast data from the unseen sensors for the LightGBM models trained with Bayesian optimization.
+16. (Python) Code to forecast data from the unseen sensors using the LightGBM models trained with Bayesian optimization.
 
 17. (Python) Code to forecast data from the unseen sensors using DeepAR.
 
