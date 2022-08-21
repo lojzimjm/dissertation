@@ -3,9 +3,9 @@ The notebooks in this repo contain the code used for data acquisiton, EDA, local
 
 1. (Python) The first notebook contains the code needed to interact with the Portland-Vancouver traffic API to obtain data for that highway system. All raw data, whether gathered via this API or through a web interface, is stored in the Data/Raw directory.
 
-2. (Python) Code to read in raw data and perform simple linear interpolation for missing values. Outputs from this notebook go to the Data/Intermediate directory.
+2. (Python) Code to read in raw data, perform simple linear interpolation for missing values, and output the data in a standardized format. Outputs from this notebook go to the Data/Intermediate directory.
 
-3. (R) Code to explore missing data and perform imputation using modified temporal medians technique. Outputs from this notebook is written to the Data/Processed directory. These files are the ones we work with for the rest of the analysis/modeling. 
+3. (R) Code to explore missing data and perform imputation using the modified temporal medians technique. Outputs from this notebook is written to the Data/Processed directory. These files are the ones we work with for the rest of the analysis/modeling. 
 
 4. (R) Code to perform exploratory analysis.
 
@@ -19,7 +19,7 @@ The notebooks in this repo contain the code used for data acquisiton, EDA, local
 
 9.1. (Python) Code to perform LightGBM global modeling with no hyperparameter tuning. 
 
-9.2. (Python) Code to perform LightGBM global modeling with Bayesian hyperparameter tuning. Note that based on https://github.com/fmfn/BayesianOptimization/issues/155, running Bayesian optimization on different machines, even with the same set up otherwise, is likely to yield somewhat different results.
+9.2. (Python) Code to perform LightGBM global modeling with Bayesian optimization for hyperparameter tuning. Note that based on https://github.com/fmfn/BayesianOptimization/issues/155, running Bayesian optimization on different machines, even with the same set up otherwise, is likely to yield somewhat different results.
  
 9.3. (Python) Code to perform LightGBM local modeling with no hyperparameter tuning and with Bayesian optimization.
 
@@ -35,7 +35,7 @@ The notebooks in this repo contain the code used for data acquisiton, EDA, local
 
 15. (Python) Code to forecast data from the unseen sensors for the default LightGBM models.
 
-16. (Python) Code to forecast data from the unseen sensors for the LightGBM models trained with Bayesian Optimization.
+16. (Python) Code to forecast data from the unseen sensors for the LightGBM models trained with Bayesian optimization.
 
 17. (Python) Code to forecast data from the unseen sensors using DeepAR.
 
