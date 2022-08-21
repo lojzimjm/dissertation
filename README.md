@@ -149,6 +149,7 @@ To open the notebooks, activate the relevant conda environment (e.g., `conda act
 * The code in this repo is meant to be run in order. While notebooks can be run out of order, there may be dependcies on earlier notebooks which cause problems. For example, all notebooks which perform global modeling depend on the clustering results of notebook 7, so notebook 7 must be run before performing any global modeling. Any notebook which performs forecasting with global models on unseen data requires the original modeling results, so notebook 16 relies on the results of notebook 9.2, for example. 
 * After completing the use of one notebook, it is advisable to shut it down before moving onto the next notebook. Because there is a large amount of data and many of the models used in this repo are fairly complex, it is easy to eat up a lot of RAM without thinking about it. By shutting down each notebook before moving to the next one, this problem can be largely avoided. 
 * Please note: this code was originially run on a machine with _64 GB_ RAM. I do not know how it will perform with less than this.
+* Some code is re-used between notebooks, but unfortunately the code is essentially copied and pasted from one notebook to the next. Ideally, this code would be written into a package which could be imported into each notebook where it is used and thus re-used more efficiently. However, I ran out of time to implement this.
 
 #### Running Notebooks 1-3
 
